@@ -8,8 +8,7 @@
 // your code here
 
 
-// your code here
-// your code here
+
 const score = 80;
 
 if (score >= 90) {
