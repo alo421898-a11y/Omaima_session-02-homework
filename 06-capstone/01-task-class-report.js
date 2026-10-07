@@ -20,3 +20,51 @@ const students = [
 ];
 
 // your code here
+
+let totalScore = 0;
+let highestScore = students[0].score;
+let bestStudent = students[0].name;
+
+for (let i = 0; i < students.length; i++) {
+  const student = students[i];
+  let grade = "";
+
+
+  if (student.score >= 90) {
+    grade = "A";
+  } else if (student.score >= 80) {
+    grade = "B";
+  } else if (student.score >= 70) {
+    grade = "C";
+  } else if (student.score >= 60) {
+    grade = "D";
+  } else {
+    grade = "F";
+  }
+
+  
+  console.log(`${student.name}: ${student.score} -> ${grade}`);
+
+   
+  if (student.score >= 60) {
+    console.log("PASSED");
+  } else {
+    console.log("FAILED");
+  }
+
+   
+  totalScore += student.score;
+
+  
+  if (student.score > highestScore) {
+    highestScore = student.score;
+    bestStudent = student.name;
+  }
+}
+
+ 
+const classAverage = totalScore / students.length;
+console.log(`Class Average: ${classAverage}`); 
+
+
+console.log(`Best Student: ${bestStudent}`);
