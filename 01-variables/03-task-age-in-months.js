@@ -6,3 +6,7 @@
 // Print: "I am 20 years old = 240 months = 7300 days"
 
 // your code here
+const myAge = 20;
+const months = myAge * 12;
+const days = myAge * 365;
+console.log(`I am ${myAge} years old = ${months} months = ${days} days`);
