@@ -9,3 +9,13 @@
 const temperatures = [32, 38, 45, 29, 41, 35];
 
 // your code here
+
+let max = temperatures[0];
+
+for (let i = 1; i < temperatures.length; i++) {
+  if (temperatures[i] > max) {
+    max = temperatures[i];
+  }
+}
+
+console.log(`The hottest temperature is: ${max}`);
