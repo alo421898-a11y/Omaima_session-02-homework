@@ -6,3 +6,12 @@
 // Test with: 2024 (leap), 1900 (not leap), 2000 (leap), 2026 (not leap)
 
 // your code here
+
+
+const year = 2024;  
+
+if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+  console.log(`${year} leap year`);
+} else {
+  console.log(`${year} not a leap year`);
+}
