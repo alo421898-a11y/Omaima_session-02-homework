@@ -7,3 +7,20 @@
 // 3. Change pages to a different number and print the object again
 
 // your code here
+
+const book = {
+  title: "Celestial Bodies",
+  author: "Jokha Alharthi",
+  year: 2010,
+  pages: 243
+};
+
+console.log(`${book.title} by ${book.author} (${book.year}), ${book.pages} pages`);
+
+
+book.isRead = true;
+
+
+book.pages = 300;
+console.log(book);
+
