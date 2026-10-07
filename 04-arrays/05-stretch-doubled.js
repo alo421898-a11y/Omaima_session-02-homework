@@ -7,3 +7,10 @@
 const values = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 // your code here
+const doubled = [];
+
+for (let i = 0; i < values.length; i++) {
+  doubled.push(values[i] * 2);
+}
+
+console.log(doubled);
