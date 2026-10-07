@@ -13,3 +13,14 @@ const products = [
 ];
 
 // your code here
+
+let total = 0;
+
+for (let i = 0; i < products.length; i++) {
+  if (products[i].inStock) {
+    console.log(`${products[i].name} — ${products[i].price} OMR`);
+    total += products[i].price;
+  }
+}
+
+console.log(`Total = ${total} OMR`);
